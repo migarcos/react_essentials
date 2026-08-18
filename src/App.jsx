@@ -6,11 +6,10 @@ import MyButton from './components/MyButton'
 // import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      < MyButton />
+      < MyButton text='Click Me'/>
     </>
   )
 }
