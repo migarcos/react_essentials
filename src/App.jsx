@@ -10,15 +10,18 @@ import ComponentB from "./components/ComponentB"
 // 🛩️ 🪂  🧗 
 function App() {
   const myEmoji = "✈️";
-
   const textBtn = "Search Destination";
+
+  const ctrlClick = () => {
+        alert("Click was doing")
+  }
 
   return (
     <>
       <div>
         < ComponentA usrEmoji={myEmoji} title="Adventure Travel" />
 
-        < ComponentB textBtn={textBtn} />
+        < ComponentB textBtn={textBtn} ClickCtrl={ctrlClick} />
       </div>
     </>
   )
