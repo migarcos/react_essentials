@@ -2,14 +2,14 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from './assets/vite.svg'
 // import heroImg from './assets/hero.png'
-import ClassCounter from './components/ClassCounter'
 // import './App.css'
+import FunctCounter from "./components/FunctCounter"
 
 function App() {
 
   return (
     <>
-      < ClassCounter />
+      < FunctCounter />
     </>
   )
 }

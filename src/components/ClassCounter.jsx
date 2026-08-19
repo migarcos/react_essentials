@@ -25,8 +25,11 @@
         <>
           <h1>Click Counter</h1>
           <p>Count: {count} </p>
-          <button onClick={this.increase}>  ADD </button>
-          <button onClick={this.decrease}>  SUBSTRACT </button>
+          <div>
+            <button onClick={this.increase}>  ADD </button>
+            &nbsp; &nbsp; &nbsp;
+            <button onClick={this.decrease}>  SUBSTRACT </button>
+          </div>          
         </>
       );
     }
