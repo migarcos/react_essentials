@@ -1,9 +1,9 @@
 import React from 'react'
 
 const ComponentB = ({ textBtn, ClickCtrl }) => {
-    
+    const myValue = "from Child Component";
     return (
-        <button onClick={ClickCtrl}> { textBtn } </button>
+        <button onClick={ () => { ClickCtrl(myValue) }}> { textBtn } </button>
     )
 };
 

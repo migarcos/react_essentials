@@ -4,7 +4,7 @@
 // import heroImg from './assets/hero.png'
 // import './App.css'
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import ComponentA from "./components/ComponentA"
 import ComponentB from "./components/ComponentB"
 
@@ -19,12 +19,19 @@ function App() {
     setMessage("Ready to Trip")
   }
 
+  const callback = useCallback(
+    (data) => {
+      setMessage(data)
+    },
+  )
+
   return (
     <>
       <div>
         < ComponentA usrEmoji={myEmoji} title={ message } />
-
         < ComponentB textBtn={textBtn} ClickCtrl={mngClick} />
+        &nbsp; &nbsp; &nbsp; 
+        < ComponentB textBtn="CallBack" ClickCtrl={callback} />
       </div>
     </>
   )
