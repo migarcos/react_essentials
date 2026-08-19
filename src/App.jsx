@@ -12,7 +12,7 @@ function App() {
   const myEmoji = "✈️";
   const textBtn = "Search Destination";
 
-  const ctrlClick = () => {
+  const mngClick = () => {
         alert("Click was doing")
   }
 
@@ -21,7 +21,7 @@ function App() {
       <div>
         < ComponentA usrEmoji={myEmoji} title="Adventure Travel" />
 
-        < ComponentB textBtn={textBtn} ClickCtrl={ctrlClick} />
+        < ComponentB textBtn={textBtn} ClickCtrl={mngClick} />
       </div>
     </>
   )
