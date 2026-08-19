@@ -1,9 +1,13 @@
 import React from 'react'
 
 const ComponentB = ({ textBtn }) => {
-  return (
-    <button> { textBtn } </button>
-  )
+
+    const ctrlClick = () => {
+        alert("Click was doing")
+    }
+    return (
+        <button onClick={ctrlClick}> { textBtn } </button>
+    )
 };
 
 export default ComponentB
