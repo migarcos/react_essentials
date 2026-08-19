@@ -9,13 +9,16 @@ import ComponentB from "./components/ComponentB"
 
 // 🛩️ 🪂  🧗 
 function App() {
+  const myEmoji = "✈️";
+
+  const textBtn = "Search Destination";
 
   return (
     <>
       <div>
-        < ComponentA emoji="✈️" title="Adventure Travel" />
+        < ComponentA usrEmoji={myEmoji} title="Adventure Travel" />
 
-        < ComponentB textBtn="Search Destiny" />
+        < ComponentB textBtn={textBtn} />
       </div>
     </>
   )
