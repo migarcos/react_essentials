@@ -1,4 +1,6 @@
 import React from "react";
+import Item from "./Item";
+import "../css/prods.css"
 
 const Catalog = () => {
 
@@ -14,19 +16,21 @@ const Catalog = () => {
 
     return (
         <>
-            <h2>PRODUCT LIST</h2>
-            
-            { prods.length === 0 ? (
-                <p> E M P T Y  ! </p>
-            ) : (
-                <ul>
-                { prods.map(
-                    (prod) => (
-                        <li key={prod.id}> {prod.name} - US$ {prod.value} </li>
-                    )
+            <section>
+                <h2>PRODUCT LIST</h2>
+                
+                { prods.length === 0 ? (
+                    <p> E M P T Y  ! </p>
+                ) : (
+                    <ul>
+                        { prods.map(
+                            (prod) => (
+                                < Item key={prod.id}  product={prod} />
+                            )
+                        )}
+                    </ul>
                 )}
-            </ul>
-            )}
+            </section>
         </>
     )
 
