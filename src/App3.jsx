@@ -1,4 +1,4 @@
-import Catalog from "./components/Catalog"
+import Catalog from "./components/4/Catalog"
 // 🛩️ 🪂  🧗 
 function App() {
   return (
