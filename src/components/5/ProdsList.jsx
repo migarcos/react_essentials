@@ -16,8 +16,8 @@ const ProdsList = ({ data }) => {
                             (item, index) => (
                                 <article key={index}>
                                     <h2>{item.nombre} </h2>
-                                    <p class='desc'>{item.descripcion}</p>
-                                    <p>US${item.precio}</p>
+                                    <p className='desc'> {item.descripcion} </p>
+                                    <p className='price'>US${item.precio}</p>
                                 </article>
                             )
                         )}

@@ -35,5 +35,17 @@
         "nombre": "Audífonos",
         "precio": 79.99,
         "descripcion": "Lorem ipsum dolor sit amet, aute irure dolor in reprehenderit, consectetur adipiscing elit"
+    },
+    {
+        "id": 7,
+        "nombre": "Notebook",
+        "precio": 700.99,
+        "descripcion": "Lorem ipsum dolor sit amet, aute irure dolor in reprehenderit, consectetur adipiscing elit"
+    },
+    {
+        "id": 8,
+        "nombre": "Processor",
+        "precio": 400.25,
+        "descripcion": "Lorem ipsum dolor sit amet, aute irure dolor in reprehenderit, consectetur adipiscing elit"
     }
 ]
