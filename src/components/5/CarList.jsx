@@ -1,11 +1,19 @@
-import React from 'react'
+import ItemCarrito from './ItemCarrito';
 
-const CarList = () => {
+function CartList( {prods} ) {
+
   return (
-    <>
-        
-    </>
+    <div className='col-md-3 border-start border-4 border-secondary'>
+      <div className='sticky-top'>
+        <h2>Shopping Cart</h2>
+        { prods.map( prod => (
+          < ItemCarrito key={prod.id} prod={prod}
+            onClick={ () => { removerItem(prod) } }
+          />
+        ))}
+      </div>
+    </div>
   )
 }
 
-export default CarList
+export default CartList

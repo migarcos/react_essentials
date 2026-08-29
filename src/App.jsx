@@ -31,7 +31,8 @@ function App() {
   return (
     <> 
       < ProdsList data={data} />
-      < CarList />
+      
+      < CarList prods={data}/>
     </>
   )
 }
